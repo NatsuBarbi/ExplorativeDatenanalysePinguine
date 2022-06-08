@@ -1,19 +1,20 @@
+## Daten - Zahlen
+## Was fuer Unterschiede haben andere Pinguin Arten (Spezies) ?
 describeBy(PenguinData, group = "species", skew = FALSE)
 
 ## --------------------------------------------------------------------------------------------------------
 
-## Vars	    Die Variable
-## N	    Anzahl Beobachtungen
-## Mean	    Mittlwert
-## Sd 	    Standartabweichung
-## Median	Median
-## Trimmed	Getrimmte Mittelwert (oberen/unteren 10% der Werte werden abgeschnitten)
-## Min	    Minwert
-## Max	    Maxwert
-## Range	Max – Min
+## Vars	      Die Variable
+## N	      Anzahl Beobachtungen
+## Mean	      Mittlwert
+## Sd 	      Standartabweichung
+## Median	  Median
+## Trimmed	  Getrimmte Mittelwert (oberen/unteren 10% der Werte werden abgeschnitten)
+## Min	      Minwert
+## Max	      Maxwert
+## Range	  Max – Min
 
 
-## --------------------------------------------------------------------------------------------------------
 ## species: Adelie
 ##                   vars   n    mean     sd    min    max  range    se
 ## X                    1 152   76.50  44.02    1.0  152.0  151.0  3.57
@@ -25,7 +26,6 @@ describeBy(PenguinData, group = "species", skew = FALSE)
 ## body_mass_g          7 151 3700.66 458.57 2850.0 4775.0 1925.0 37.32
 ## sex*                 8 146    1.50   0.50    1.0    2.0    1.0  0.04
 ## year                 9 152 2008.01   0.82 2007.0 2009.0    2.0  0.07
-## --------------------------------------------------------------------------------------------------------
 ## --------------------------------------------------------------------------------------------------------
 ## species: Chinstrap
 ##                   vars  n    mean     sd    min    max  range    se
@@ -39,7 +39,6 @@ describeBy(PenguinData, group = "species", skew = FALSE)
 ## sex*                 8 68    1.50   0.50    1.0    2.0    1.0  0.06
 ## year                 9 68 2007.97   0.86 2007.0 2009.0    2.0  0.10
 ## --------------------------------------------------------------------------------------------------------
-## --------------------------------------------------------------------------------------------------------
 ## species: Gentoo
 ##                   vars   n    mean     sd    min    max  range    se
 ## X                    1 124  214.50  35.94  153.0  276.0  123.0  3.23
@@ -51,5 +50,3 @@ describeBy(PenguinData, group = "species", skew = FALSE)
 ## body_mass_g          7 123 5076.02 504.12 3950.0 6300.0 2350.0 45.45
 ## sex*                 8 119    1.51   0.50    1.0    2.0    1.0  0.05
 ## year                 9 124 2008.08   0.79 2007.0 2009.0    2.0  0.07
-## --------------------------------------------------------------------------------------------------------
-## --------------------------------------------------------------------------------------------------------
