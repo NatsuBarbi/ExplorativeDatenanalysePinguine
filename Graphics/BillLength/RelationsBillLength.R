@@ -1,7 +1,3 @@
-## Daten - Zahlen
-## Durchschnittswerte der Schnabelbreite fuer ALLE Eintraege
-describe(PenguinData["bill_depth_mm"])
-
 ## Vars	        Die Variable
 ## N	        Anzahl Beobachtungen
 ## Mean	        Mittlwert
@@ -9,12 +5,12 @@ describe(PenguinData["bill_depth_mm"])
 ## Median	    Median
 ## Trimmed	    Getrimmte Mittelwert (oberen/unteren 10% der Werte werden abgeschnitten)
 ## Mad	        Streumaß um den Median herum
-## Min	        Minwert
-## Max	        Maxwert
-## Range	    Max – Minwert
+## Min	        Min
+## Max	        Max
+## Range	    Max – Min
 ## Skew	        Schiefe im Vergleich zu einer Standartnormalverteilung
 ## Kurtosis	    Im Vergleich zu einer Standartverteilung
 ## Se	        Standard Error
 
-##               vars   n  mean   sd median trimmed  mad  min  max range  skew kurtosis   se
-## bill_depth_mm    1 342 17.15 1.97   17.3   17.17 2.22 13.1 21.5   8.4 -0.14    -0.92 0.11
+##                vars   n  mean   sd median trimmed  mad  min  max range skew kurtosis  se
+## bill_length_mm    1 342 43.92 5.46  44.45   43.91 7.04 32.1 59.6  27.5 0.05    -0.89 0.3
