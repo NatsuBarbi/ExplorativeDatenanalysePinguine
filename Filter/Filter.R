@@ -28,3 +28,5 @@ describe(data_female)
 ## > Filter: Jahr
 summary(PenguinData$year)
 describeBy(PenguinData, group = "year")
+
+View(PenguinData$species=="Chinstrap")
