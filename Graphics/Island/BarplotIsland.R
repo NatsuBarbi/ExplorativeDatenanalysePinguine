@@ -90,11 +90,22 @@ ggplot(data = data_Torgersen, aes(x = year, y = stat(count), group = sex, fill =
 
 ##################################### Species #############################################
 #
-ggplot(data = PenguinData, aes(x = island, y = stat(count), group = species, fill = species)) +
+ggplot(data = data_Torgersen, aes(x = island, y = stat(count), group = species, fill = species)) +
+  geom_bar(position = position_dodge(width = 1)) +
+  labs(y = "Anzahl", fill = "Spezies") +
+  labs(x = "Insel") +
+  scale_y_continuous(breaks = seq(10, 150, 10)) +
+  ggtitle("Anzahl einzelner Pinguine auf der Insel Torgersen") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  geom_text(aes(label = stat(count)), stat = "count", vjust = -1,
+            position = position_dodge(width = 1))
+
+
+ggplot(data = data_complete, aes(x = flipper_length_mm, y = stat(count), group = sex, fill = sex)) +
   geom_bar(position = position_dodge(width = 1)) +
   labs(y = "Anzahl", fill = "Geschlecht") +
   labs(x = "Insel") +
-  scale_y_continuous(breaks = seq(10, 150, 10)) +
+  scale_y_continuous(breaks = seq(0, 100, 1)) +
   ggtitle("Anzahl Pinguine auf den Inseln") +
   theme(plot.title = element_text(hjust = 0.5)) +
   geom_text(aes(label = stat(count)), stat = "count", vjust = -1,

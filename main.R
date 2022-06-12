@@ -30,3 +30,7 @@ data_Chinstrap <- subset(PenguinData, species == "Chinstrap")
 
 ## dataset all Gentoo penguins
 data_Gentoo <- subset(PenguinData, species == "Gentoo")
+
+## dataset without NA's
+data_complete <- na.omit(PenguinData)
+

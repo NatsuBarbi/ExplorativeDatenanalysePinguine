@@ -3,18 +3,12 @@ ggscatter(PenguinData, x = "island", y = "body_mass_g", color = "sex", add = "re
   facet_wrap(vars(sex)) +
   labs(x = "Fundort", y = "Gewicht [g]", title = "Header")
 
-## Scatterplot
-## Schnabellaenge ALLE
-ggscatter(PenguinData, x = "island", y = "bill_length_mm", color = "species", add = "reg.line") +
-  facet_wrap(vars(species)) +
-  labs(x = "Fundort", y = "Schnabellaenge [mm]", title = "Header")
+## Gewicht Adelie Herkunft
+ggscatter(data_Adelie, x = "body_mass_g", y = "body_mass_g", color = "island") +
+  facet_wrap(vars(island)) +
+  labs(y = "Gewicht [g]")+
+  scale_x_continuous(breaks = seq(1000, 7000, 1000)) +
+  scale_y_continuous(breaks = seq(1000, 7000, 500)) +
+  grids(axis = c("xy", "x", "y"), color = "grey92", size = NULL, linetype = "dashed")
 
-## Scatterplot
-## Schnabellaenge ALLE
-ggscatter(PenguinData, x = "island", y = "bill_depth_mm", color = "species", add = "reg.line") +
-  facet_wrap(vars(species)) +
-  labs(x = "Fundort", y = "Schnabelbreite [mm]", title = "Header")
 
-## Schnabellänge und breite in relation
-ggscatter(PenguinData, x="bill_depth_mm", y="bill_length_mm", color = "sex", add="reg.line")+
-  facet_wrap(vars(sex))

@@ -26,7 +26,7 @@ summary(data_female$flipper_length_mm)
 
 ## Gewicht
 ## > Schnabelbreite: Gesamt
-describe(PenguinData$body_mass_g)
+describe(data_Dream$body_mass_g)
 ##   Schnabelbreite: per Geschlecht
 summary(data_male$body_mass_g)
 summary(data_female$body_mass_g)
@@ -45,3 +45,7 @@ summary(data_2009)
 summary(data_Adelie)
 summary(data_Chinstrap)
 summary(data_Gentoo)
+
+describeBy(data_Adelie, group = "island")
+
+

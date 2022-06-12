@@ -1,7 +1,7 @@
 ## > Filter: Spezies
 summary(PenguinData$species)
 describeBy(PenguinData, group = "species")
-describeBy(data_male, "species")
+describeBy(data_female, "species")
 
 ## > Filter: Herkunft
 summary(PenguinData$island)
@@ -29,4 +29,6 @@ describe(data_female)
 summary(PenguinData$year)
 describeBy(PenguinData, group = "year")
 
-View(PenguinData$species=="Chinstrap")
+describeBy(data_2007$species=="Adelie")
+describeBy(data_2008$species=="Adelie")
+describeBy(data_2009$species=="Adelie")
